@@ -13,3 +13,13 @@ build:
     - mkdir -p shippable/codecoverage
     # - mvn install
     - cp -r target shippable/codecoverage
+
+integrations:    
+  notifications:
+    - integrationName: slack
+      type: slack
+      recipients:
+        - "#mybuilds" 
+      on_start: always
+      on_success: always
+      on_failure: always
