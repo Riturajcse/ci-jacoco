@@ -18,8 +18,7 @@ integrations:
   notifications:
     - integrationName: 
         - "slack"
-      type: 
-        - "slack"
+      type: slack
       recipients:
         - "#mybuilds" 
       on_start: always
